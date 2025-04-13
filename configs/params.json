@@ -1,0 +1,18 @@
+{
+  "lon_min": 122.215,
+  "lon_max": 122.27498666666666,
+  "lat_min": 30.20000333333333,
+  "lat_max": 30.24997,
+  "test_size": 0.3,
+  "random_state": 42,
+  "batches_path": "./s_batches.pkl",
+  "num_epochs": 400,
+  "learning_rate": 0.0003,
+  "check": 50,
+  "lr_milestones": [200, 400],
+  "data_scale": 10,
+  "gama": 0.5,
+  "num_k": 50,
+  "route_num": 10,
+  "n_clusters": 50
+}
