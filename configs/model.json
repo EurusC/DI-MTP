@@ -1,0 +1,12 @@
+{
+    "dropout_rate": 0.5,
+    "obs_len": 1,
+    "pred_len": 12,
+    "enc_dim": 64,
+    "att_hidden": 512,
+    "att_layer": 3,
+    "feat_dims": 2,
+    "hidden": [1024, 512, 1024],
+    "d_model": 256,
+    "sigma": 1.3
+}
