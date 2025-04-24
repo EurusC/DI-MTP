@@ -1,6 +1,7 @@
 # DI-MTP
 
 ## 数据预处理
+我们提供了mask的CSV和Pickle文件，出于商业隐私考虑，我们不能直接提供完整的数据集。为了更好地展现流程，我们截取了一部分数据，并对其 mmsi、lon、lat、timestamp 等关键信息做了处理，您可以将自己的数据处理成类似的形式。
 
 ### 1. 生成 Pickle 文件
 
@@ -28,7 +29,13 @@
 - scene：选择需要训练的场景（例如 "zhoushan"）。
 
 - cuda：使用哪个GPU加速训练（如 0）。
+
 #### 训练前的准备
 - 在 run.py 中的 main 方法中，您需要根据您的数据集进行如下修改：
     - 设置 lon_min、lon_max、lat_min 和 lat_max 来确保训练数据的地理位置范围符合您的需求。
     - 修改 batches_path，指向包含数据的路径。
+
+#### 训练
+```shell
+python run.py --obs_len 6 --pred_len 12 --scene 'mask' --cuda 0
+  
